@@ -12059,7 +12059,7 @@ if (outputEl) {{
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="font-size:16px">The weather also impacts the bike-share ride duration. On sunny days with no rain, the rides are almost 20.8% longer, and the average duration increases with improving weather conditions.</p>
+<p style="font-size:16px">The weather also impacts the bike-share ride duration. On sunny days with no rain, the rides are almost 20.8% longer, and the duration increases with improving weather conditions.</p>
 </div>
 </div>
 </div>
@@ -12161,7 +12161,7 @@ if (outputEl) {{
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Share-of-Customer-riding-increases-when-it's-hot">Share of Customer riding increases when it's hot<a class="anchor-link" href="#Share-of-Customer-riding-increases-when-it's-hot">&#182;</a></h3>
+<h3 id="Share-of-Customer-increases-when-it's-hot">Share of Customer increases when it's hot<a class="anchor-link" href="#Share-of-Customer-increases-when-it's-hot">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -12300,7 +12300,7 @@ if (outputEl) {{
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Daylight-and-average-temperature-are-correlated-with-the-average-bike-share-ride-duration">Daylight and average temperature are correlated with the average bike-share ride duration<a class="anchor-link" href="#Daylight-and-average-temperature-are-correlated-with-the-average-bike-share-ride-duration">&#182;</a></h3>
+<h3 id="Daylight-and-temperature-are-correlated-with-average-bike-share-ride-duration">Daylight and temperature are correlated with average bike-share ride duration<a class="anchor-link" href="#Daylight-and-temperature-are-correlated-with-average-bike-share-ride-duration">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -12308,8 +12308,8 @@ if (outputEl) {{
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="font-size:16px">I computed Pearson's correlation between the number of bike rides and trip duration with every weather feature. The daylight and average temperature are correlated with bike-share ride duration both with **0.27** correlation. The number of bike rides is less correlated to the same features. This finding agrees with my insight from above that with a good weather condition, people tend to ride longer rather than more often. 
-<br> Not surprisingly, both the number of rides and duration is negatively correlated with precipitation with a correlation of **-0.13** and **-0.16**,  respectively.  See full analysis for more on <a href="full_analysis.html#corr">correlation</a> incl. scatter-matrix.</p>
+<p style="font-size:16px">I computed Pearson's correlation between the number of bike rides and trip duration with every weather feature. The daylight and average temperature are correlated with bike-share ride duration both with 0.27 correlation. The number of bike rides is less correlated to the same features. This finding agrees with my insight from above that with a good weather condition, people tend to ride longer rather than more often. 
+<br> Not surprisingly, both the number of rides and duration are negatively correlated with precipitation with a correlation of -0.13 and -0.16, respectively.  See full analysis for more on <a href="full_analysis.html#corr">correlation</a> incl. scatter-matrix.</p>
 </div>
 </div>
 </div>
@@ -12402,8 +12402,8 @@ Name: avg_duration, dtype: float64
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p style="font-size:16px">By constructing time series models, I discovered that the weather is a good predictor of daily bike-share rides.
-I built a SARIMA and a SARIMAX models and compared their RMSE and $R^2$. I proved that including a weather feature improves the prediction accuracy of a model. 
-<br> I chose to predict the number of bike-share rides per day to restrict the scope. But similar models could be applied to predict the daily duration. Both metrics are important for a bike-share business. The number of rides prediction can be used for planning the capacity. The duration would be helpful to forecast the company's revenue.</p>
+I built a SARIMA and a SARIMAX models and compared their RMSE and R2. I proved that including a weather feature improves the prediction accuracy of a model. 
+<br> I chose to predict the number of bike-share rides per day to restrict the scope. But similar models could be applied to predict the daily duration. Both metrics are important for a bike-share business. The number of rides can be used for planning the capacity. The duration would be helpful to forecast the company's revenue.</p>
 </div>
 </div>
 </div>
@@ -12420,8 +12420,8 @@ I built a SARIMA and a SARIMAX models and compared their RMSE and $R^2$. I prove
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p style="font-size:16px"> Using weather factor improved both performance metrics vs. the univariate model.  
-    <br> RMSE of SARIMAX is **673.52** (vs. 1069.76 of SARIMA)
-    <br> R2 of SARIMAX is **0.8** (vs. 0.49 of SARIMA)</p>
+    <br> RMSE of SARIMAX is 673.52 (vs. 1069.76 of SARIMA)
+    <br> R2 of SARIMAX is 0.8 (vs. 0.49 of SARIMA)</p>
 </div>
 </div>
 </div>
